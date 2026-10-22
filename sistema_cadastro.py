@@ -2,7 +2,7 @@
 Sistema de Cadastro - clientes, produtos e pedidos.
 
 Programa de terminal que guarda tudo em um arquivo JSON (dados.json).
-O pedido liga um cliente a um ou mais produtos usando apenas os ids.
+O pedido liga um cliente a um ou alguns produtos a mais usando apenas os ids.
 """
 
 import json
@@ -13,6 +13,7 @@ ARQUIVO = "dados.json"
 clientes = []
 produtos = []
 pedidos = []
+contadores = []
 
 # Contador de ids: nunca reaproveita um id, mesmo depois de excluir.
 contadores = {"clientes": 1, "produtos": 1, "pedidos": 1}
